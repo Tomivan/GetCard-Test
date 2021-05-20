@@ -25,7 +25,7 @@ const repositories = document.querySelector(".repositories");
 fetch(`https://api.github.com/graphql`, {
   method: "POST",
   headers: {
-    Authorization: `bearer ${key1 + key2 + key3}`,
+    Authorization: `bearer ${key1}`,
     "Content-Type": "application/json",
   },
   body: JSON.stringify(data),
