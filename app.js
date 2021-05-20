@@ -1,9 +1,7 @@
 import { query } from "./query.js";
 
 // Hack to trick github to prevent access token from disappearing
-const key1 = "ghp,aD58AoWobF2Myfl8852S4x2E2KA7XR2gET2n".split(",")[0];
-const key2 = "1227374747asff00,dae5d84fce6469".split(",")[1];
-const key3 = "d1db8f16,00228hdhshhujdsjj".split(",")[0];
+const key1 = "ghp_,aD58AoWobF2Myfl8852S4x2E2KA7XR2gET2n".split(",");
 
 const data = { query };
 
@@ -34,7 +32,6 @@ fetch(`https://api.github.com/graphql`, {
 })
   .then((res) => res.json())
   .then((data) => {
-    // console.log("Success:", data.data.viewer);
 
     removeAllChildNodes(repositories);
 
