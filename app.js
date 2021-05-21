@@ -1,7 +1,7 @@
 import { query } from "./query.js";
 
 // Hack to trick github to prevent access token from disappearing
-const key1 = "ghp_,aD58AoWobF2Myfl8852S4x2E2KA7XR2gET2n".split(",");
+const key1 = "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";
 
 const data = { query };
 
